@@ -96,3 +96,21 @@ footer {
     padding-bottom: 16px;
     border-radius: 20px;
 }
+
+
+/*////// Tablet //////*/
+
+@media screen and (min-width: 768px) {
+
+/* Header Tablet */
+
+.logo  {
+    width: 250px;
+    height: 150px;
+}
+
+.logo > img {
+    width: 100%;
+}
+
+}
