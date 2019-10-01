@@ -122,5 +122,9 @@ main {
 
 /* Footer Tablet */
 
+.choose {
+    justify-content: space-around;
+}
+
 
 }
