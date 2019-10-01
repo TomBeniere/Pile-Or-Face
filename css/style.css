@@ -36,13 +36,13 @@ header {
 
 /* Main */
 
- main {
+main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin-top: 150px;
-    margin-bottom: 250px;
+    margin-top: 100px;
+    margin-bottom: 125px;
 }
 
 .bitcoin {
@@ -53,7 +53,7 @@ header {
 
 .bitcoin>img {
     width: 50%;
-} 
+}
 
 .goldcoin {
     display: flex;
@@ -145,38 +145,20 @@ footer {
 
 }
 
-/* Animation 3D */
+/* Desktop */
 
 @media screen and (min-width: 1024px) {
 
-    main {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 100px;
-        margin-bottom: 125px;
-    }
-    
+    /* Main */
+
     .bitcoin {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         z-index: 100;
-        transition: 2s;
         width: 500px;
         height: 300px;
     }
-    
-    .bitcoin>img {
-        width: 50%;
-    }
 
     .goldcoin {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         z-index: 50;
-        transition: 2s;
         width: 500px;
         height: 300px;
     }
@@ -185,13 +167,5 @@ footer {
         width: 58%;
     }
 
-    .bitcoin:hover {
-        transform: rotateY(360deg);
-    }
-
-    .goldcoin:hover {
-        transform: rotateY(360deg);
-    }
-
-
+    
 }

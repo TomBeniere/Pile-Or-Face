@@ -1,5 +1,7 @@
 var choose = "";
 var resultat = "";
+var bitcoin = document.getElementById("bitcoin");
+var goldcoin = document.getElementById("goldcoin");
 
 function aleatoire() {
     if (Math.floor(Math.random() * (2 - 0) + 0) >= 1) {
