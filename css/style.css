@@ -12,6 +12,8 @@ body {
     background-color: #f8f4f3; 
 }
 
+/* Header */
+
 header {
     display: flex;
     justify-content: center;
@@ -23,9 +25,31 @@ header {
     justify-content: center;
     align-items: center;
     width: 200px;
-    height: 130px;
+    height: 120px;
 }
 
 .logo > img {
     width: 100%;
 }
+
+/* Main */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.bitcoin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bitcoin > img {
+    width: 50%;
+}
+
+/* Footer */
