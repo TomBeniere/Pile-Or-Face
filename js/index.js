@@ -5,7 +5,7 @@ function aleatoire() {
     if (Math.floor(Math.random() * (2 - 0) + 0) >= 1) {
         return resultat = "Bitcoin";
     } else {
-        return resultat = "Ethereum";;
+        return resultat = "Goldcoin";;
     }
 }
 
@@ -13,11 +13,11 @@ function Bit() {
     return choose = "Bitcoin";
 }
 
-function Ether() {
-    return choose = "Ethereum";
+function Gold() {
+    return choose = "Goldcoin";
 }
 
-function BitOrEther() {
+function BitOrGold() {
     aleatoire();
     if (choose == resultat) {
         alert("bien joué c'était " + resultat);
@@ -25,3 +25,4 @@ function BitOrEther() {
         alert("mal joué c'etait " + resultat);
     }
 }
+
