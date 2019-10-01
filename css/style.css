@@ -10,6 +10,7 @@ html {
 
 body {
     background-color: #f8f4f3; 
+    padding: 6px;
 }
 
 /* Header */
@@ -39,7 +40,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: 150px;
-    margin-bottom: 50px;
+    margin-bottom: 250px;
 }
 
 .bitcoin {
@@ -53,3 +54,45 @@ main {
 }
 
 /* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.coin {
+    background: #e79f27;
+    color: #6e3321;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 150px;
+    border: none;
+    outline: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 20px;
+}
+
+.play {
+    background: #e79f27;
+    color: #6e3321;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 20px;
+}
