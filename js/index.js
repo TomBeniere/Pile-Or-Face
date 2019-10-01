@@ -4,10 +4,8 @@ var resultat = "";
 function aleatoire() {
     if (Math.floor(Math.random() * (2 - 0) + 0) >= 1) {
         return resultat = "Bitcoin";
-    } else if (Math.floor(Math.random() * (2 - 0) + 0) < 1){
-        return resultat = "Ethereum";
     } else {
-        return resultat = "bug merci !";
+        return resultat = "Ethereum";;
     }
 }
 
