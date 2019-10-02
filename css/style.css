@@ -151,14 +151,16 @@ footer {
 
     /* Main */
 
+    main {
+        min-height: 250px;
+    }
+
     .bitcoin {
-        z-index: 100;
         width: 500px;
         height: 300px;
     }
 
     .goldcoin {
-        z-index: 50;
         width: 500px;
         height: 300px;
     }
@@ -166,6 +168,5 @@ footer {
     .goldcoin>img {
         width: 58%;
     }
-
     
 }
