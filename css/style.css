@@ -34,6 +34,10 @@ header {
     width: 100%;
 }
 
+.scoreboard {
+    display: none;
+}
+
 /* Main */
 
 main {
@@ -89,7 +93,6 @@ footer {
     font-weight: bold;
     width: 150px;
     border: none;
-    outline: none;
     padding-top: 16px;
     padding-bottom: 16px;
     border-radius: 20px;
@@ -125,15 +128,24 @@ footer {
         width: 100%;
     }
 
+    .scoreboard {
+        display: none;
+    }
+
     /* Main Tablet */
 
     main {
         margin-top: 100px;
         margin-bottom: 125px;
+        min-height: 250px;
+    }
+
+    .bitcoin>img {
+        width: 42%;
     }
 
     .goldcoin>img {
-        width: 51%;
+        width: 41%;
     }
 
     /* Footer Tablet */
@@ -148,6 +160,23 @@ footer {
 /* Desktop */
 
 @media screen and (min-width: 1024px) {
+
+    /* Header */
+
+    header {
+        position: relative;
+    }
+
+    .scoreboard {
+        position: absolute;
+        top: 60px;
+        left: 1150px;
+    }
+
+    .scoreboard>p {
+        font-size: 30px;
+        font-weight: bold;
+    }
 
     /* Main */
 
@@ -168,5 +197,13 @@ footer {
     .goldcoin>img {
         width: 58%;
     }
-    
+
+    .coin {
+        cursor: pointer;
+    }
+
+    .play {
+        cursor: pointer;
+    }
+
 }
