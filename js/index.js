@@ -41,15 +41,15 @@ function animation() {
 
     setTimeout(function() {
         if (resultat == "Bitcoin") {
-        bitcoin.style.transform = "rotateY(360deg)";
-        goldcoin.style.transform = "rotateY(180deg)";
-        bitcoin.style.transition = "3s";
-        goldcoin.style.transition = "3s";
+        bitcoin.style.transform = "rotateY(2520deg)";
+        goldcoin.style.transform = "rotateY(1620deg)";
+        bitcoin.style.transition = "2s";
+        goldcoin.style.transition = "2s";
     } else {
-        bitcoin.style.transform = "rotateY(540deg)";
-        goldcoin.style.transform = "rotateY(360deg)";
-        bitcoin.style.transition = "3s";
-        goldcoin.style.transition = "3s";
+        bitcoin.style.transform = "rotateY(2700deg)";
+        goldcoin.style.transform = "rotateY(1800deg)";
+        bitcoin.style.transition = "2s";
+        goldcoin.style.transition = "2s";
     }
     }, 500)
     
