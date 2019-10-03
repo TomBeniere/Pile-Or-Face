@@ -8,6 +8,7 @@ var goldcoin = document.getElementById("goldcoin");
 var main = document.getElementById("main");
 var score = document.getElementById("score");
 var point = 0;
+var click = true;
 
 butbit.addEventListener("click", Bit);
 butgold.addEventListener("click", Gold);
@@ -59,6 +60,9 @@ function animation() {
         if (choose == resultat) {
             point += 1;
             score.innerHTML = "Score : " + point;
+        } else {
+            point -= 1;
+            score.innerHTML = "Score : " + point;
         }
         bitcoin.style.position = "static";
         goldcoin.style.position = "static";
@@ -68,10 +72,18 @@ function animation() {
         goldcoin.style.backfaceVisibility = "visible";
         bitcoin.style.transform = "rotateY(0deg)";
         goldcoin.style.transform = "rotateY(0deg)";
-    }, 3500)
+        click = "true";
+        butbitcoin.style.display = "block";
+        butgoldcoin.style.display = "block";
+    }, 4500)
 }
 
 function BitOrGold() {
+    if (click) {
+        click = false;
+        butbitcoin.style.display = "none";
+        butgoldcoin.style.display = "none";
     aleatoire();
-    animation();
+    animation();         
+    } 
 }
