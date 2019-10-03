@@ -56,11 +56,19 @@ function animation() {
     }, 500)
 
     setTimeout(function () {
-            if (choose == resultat) {
-                point += 1;
-                score.innerHTML = "Score : " + point;
-            }
-    }, 2500)
+        if (choose == resultat) {
+            point += 1;
+            score.innerHTML = "Score : " + point;
+        }
+        bitcoin.style.position = "static";
+        goldcoin.style.position = "static";
+        bitcoin.style.transition = "0s";
+        goldcoin.style.transition = "0s";
+        bitcoin.style.backfaceVisibility = "visible";
+        goldcoin.style.backfaceVisibility = "visible";
+        bitcoin.style.transform = "rotateY(0deg)";
+        goldcoin.style.transform = "rotateY(0deg)";
+    }, 3500)
 }
 
 function BitOrGold() {
